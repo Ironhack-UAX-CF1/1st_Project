@@ -1,6 +1,10 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #fixed-header {
     /*box properties*/
-    background-color: #bf88ff;
+    background-color: #dddddd;
     position: fixed;
     top: 0;
     width : 100%;
@@ -41,35 +45,95 @@
     z-index: 1;
 }
 #header{
-    background-color: rgba(0, 255, 47, 0.719);
+    background-image: url("images/header-background.jpeg");
+    background-size: cover;
+    background-position: center;
+
     position: relative;
     bottom: 0;
-    border-color: black;
     width: 100%;
     height: 92vh; 
 
     color: black;
     z-index: 1;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+  
+
+.cont{
+    position: relative;
+    width: 20%;
+    height: 100%;
+
+    color: black;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
+#cont-1{
+    left:0;
+}
+#cont-2{
+    width: 50%;
+}
+#cont-3{
+    right:0;
+}
+
+.surrounding-box{
+    position: relative;
+    width: 100%;
+    height: 20%;
+
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 400%;
+    font-weight: bold;
+
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#center-box{
+    background-color: black;
+    position: relative;
+    width: 100%;
+    height: 50%;
+ 
+
+    color: red;
+    font-family: fantasy;
+    font-size: 800%;
+    letter-spacing: .2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /*PAGE 1----------------------------------------------------------------------*/
 
 #page-1 {
-    background-color: rgba(255, 255, 0, 0.719);
+    background-color: #564d4d;
 }
 
 .page-title{
-    background-color: white;
     position: relative;
-    border-color: black;
     width: 80%;
-    height: 20%;
+    height: 15%;
 
-    color: black;
+    color: white;
+    font-size: 400%;
+    font-weight: lighter;
+
     z-index: 1;
     display: flex;
     align-items: center;
@@ -78,11 +142,10 @@
 
 
 .page-content-container{
-    background-color: white;
     position: relative;
     border-color: black;
     width: 80%;
-    height: 60%; 
+    height: 70%; 
 
     color: black;
     z-index: 1;
@@ -95,7 +158,7 @@
     background-color: grey;
     position: relative;
     width: 30%;
-    height: 100%;
+    height: 90%;
 
     color: black;
     z-index: 1;
@@ -106,15 +169,15 @@
 }
 
 #film-1{
-    background-color: blue;
+    background-color: pink;
 }
 
 #film-2{
-    background-color: red;
+    background-color: #ffd966;
 }
 
 #film-3{
-    background-color: purple;
+    background-color: #858585;
 }
 
 
@@ -139,7 +202,7 @@
   }
 
 .movie-info-box{
-    background-color: grey;
+    background-color: lightgray;
     position: relative;
     width: 80%;
     height: 20%;
@@ -170,42 +233,28 @@
 
 /*PAGE 2 ------------------------------------------------------------*/
 #page-2{
-    background-color: red; 
+    background-color: 	#831010; 
 }
 
-#form-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-
-}
 
 .form-box{
-    background-color: lightgreen;
     position: relative;
     border-color: black;
     width: 40%;
     height: 100%; 
 
-    color: black;
+    color: white;
     z-index: 1;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
 #form-1{
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-#form-2{
-    justify-content: flex-start;
-    align-items: flex-start;
+    left: 10%;
 }
 
 button{
-    position: relative;
-    top:0;
+    align-self:last baseline;
 }
-
-

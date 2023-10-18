@@ -17,14 +17,27 @@
             <div id="blank">
                 blanco
             </div>
+
             <div id="header">
-                <b>URVU</b>
+                <div class="cont" id="cont-1">
+                    <div class="surrounding-box">You</div>
+                </div>
+
+                <div class="cont" id="cont-2">
+                    <div class="surrounding-box">Review</div>
+                    <div id="center-box">UREVU</div>
+                    <div class="surrounding-box">Movies</div>
+                </div>
+
+                <div class="cont" id="cont-3">
+                    <div class="surrounding-box">Your</div>
+                </div>
             </div>
         </div>
 
         <div class="page-container" id="page-1">
             <div class="page-title">
-                LATEST RELEASES
+                Latest  Releases
             </div>
 
             <div class="page-content-container">
@@ -35,7 +48,7 @@
                     </div>
                     <div class="movie-info-box">
                         <p class="sin-espacios">Barbie</p>
-                        <p class="sin-espacios">*****</p>
+                        <p class="sin-espacios"> &#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</p>
                     </div>
                 </div>
     
@@ -45,7 +58,7 @@
                     </div>
                     <div class="movie-info-box">
                         <p class="sin-espacios">Oppenheimer</p>
-                        <p class="sin-espacios">**</p>
+                        <p class="sin-espacios">&#x2605;&#x2605;&#x2605;&#x2605;&#x2606;</p>
                     </div>
                 </div>
     
@@ -57,7 +70,7 @@
                     </div>
                     <div class="movie-info-box">
                         <p class="sin-espacios">The Exorcist</p>
-                        <p class="sin-espacios">***</p>
+                        <p class="sin-espacios">&#x2605;&#x2605;&#x2606;&#x2606;&#x2606;</p>
                     </div>
                 </div>
             </div>
@@ -66,12 +79,14 @@
 
         <div class="page-container" id="page-2">
             <div class="page-title">
-                BECOME A MEMBER
+                Become  a  member
             </div>
 
-            <div class="page-content-container" id="form-container">
+            <div class="page-content-container">
                 <form action="/some-url" method="get"></form>
+
                     <div class="form-box" id="form-1">
+                        
                         <p>
                             <label for="name">Name:</label><br>
                             <input type="text" id="name" name="name">
@@ -88,13 +103,15 @@
                             
                             <label for="fav-movie">Favourite movie:</label><br>
                             <textarea id="fav-movie" name="fav-movie" rows="4" cols="33"
-                            placeholder="This will added to your bio for other users to see"></textarea>
+                            placeholder="This will be added to your bio for other users to see"></textarea>
                         </p>
+                        
+                    
                     </div>
+                
+                    <button>Submit</button>
 
-                    <button>Save </button>
-
-                    <div class="form-box" id="form-2">
+                    <div class="form-box">
                         <p>
                             Favourite movie genres:<br>
                             <br>
@@ -117,11 +134,17 @@
                         </p>
                     </div>
 
+
                     
                 </form>
             </div>
                        
         </div>
+
+
+        <footer>
+
+        </footer>
     </body>
 
 </html>
