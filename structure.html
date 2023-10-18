@@ -23,16 +23,19 @@
         </div>
 
         <div class="page-container" id="page-1">
-            page 1
+            <div class="page-title">
+                LATEST RELEASES
+            </div>
 
-            <div id="movie-container">
+            <div class="page-content-container">
+
                 <div class="film-box" id="film-1">
                     <div class="movie-photo-box">
                         <img src="images/barbie.jpg" alt="Barbie Movie">
                     </div>
                     <div class="movie-info-box">
-                        <p>Barbie</p>
-                        <p>*****</p>
+                        <p class="sin-espacios">Barbie</p>
+                        <p class="sin-espacios">*****</p>
                     </div>
                 </div>
     
@@ -41,8 +44,8 @@
                         <img src="images/oppenheimer.jpg" alt="Oppenh Movie">
                     </div>
                     <div class="movie-info-box">
-                        <p>Oppenheimer</p>
-                        <p>**</p>
+                        <p class="sin-espacios">Oppenheimer</p>
+                        <p class="sin-espacios">**</p>
                     </div>
                 </div>
     
@@ -53,8 +56,8 @@
                         </div>
                     </div>
                     <div class="movie-info-box">
-                        <p>The Exorcist</p>
-                        <p>***</p>
+                        <p class="sin-espacios">The Exorcist</p>
+                        <p class="sin-espacios">***</p>
                     </div>
                 </div>
             </div>
@@ -62,7 +65,61 @@
         </div>
 
         <div class="page-container" id="page-2">
-            page 2
+            <div class="page-title">
+                BECOME A MEMBER
+            </div>
+
+            <div class="page-content-container" id="form-container">
+                <form action="/some-url" method="get"></form>
+                    <div class="form-box" id="form-1">
+                        <p>
+                            <label for="name">Name:</label><br>
+                            <input type="text" id="name" name="name">
+                        </p>
+                        <p>
+                            <label for="email">Email: </label><br>
+                            <input type="email" id="email"><br>
+                        </p>
+                        <p>
+                            <label for="password">Password:</label><br>
+                            <input type="password" name="password" id="password"><br>
+                        </p>
+                        <p>
+                            
+                            <label for="fav-movie">Favourite movie:</label><br>
+                            <textarea id="fav-movie" name="fav-movie" rows="4" cols="33"
+                            placeholder="This will added to your bio for other users to see"></textarea>
+                        </p>
+                    </div>
+
+                    <button>Save </button>
+
+                    <div class="form-box" id="form-2">
+                        <p>
+                            Favourite movie genres:<br>
+                            <br>
+                            <input type="checkbox" name="fav-genres" value="comedy"/> Comedy<br>
+                            <input type="checkbox" name="fav-genres" value="drama"/> Drama<br>
+                            <input type="checkbox" name="fav-genres" value="romance"/> Romance<br>
+                            <input type="checkbox" name="fav-genres" value="horror"/> Horror<br>
+                            <input type="checkbox" name="fav-genres" value="fantasy"/> Fantasy<br>
+                            <input type="checkbox" name="fav-genres" value="action"/> Action<br>
+                            <input type="checkbox" name="fav-genres" value="thriller"/> Thriller<br>
+                        </p>
+
+                        <p>
+                            Would you like to receive our annual movie collage poster? (paid suscription)<br>
+                            <br>
+                            <input type="radio" id="yes" value="Yes" name="collage-suscription">
+                            <label for="yes">Yes, I'd love to!</label><br>
+                            <input type="radio" id="no" value="No" name="collage-suscription">
+                            <label for="no">No, thanks, I'm good</label>
+                        </p>
+                    </div>
+
+                    
+                </form>
+            </div>
                        
         </div>
     </body>
